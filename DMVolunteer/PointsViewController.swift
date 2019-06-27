@@ -18,6 +18,7 @@ class PointsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        changeDisplay()
     }
     func pointAdder() {
@@ -35,6 +36,7 @@ class PointsViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Thanks!", style :UIAlertAction.Style.default, handler: nil))
                 present(alertController, animated: true, completion : nil)
             }
+       
             
         }
     
@@ -42,6 +44,23 @@ class PointsViewController: UIViewController {
     
         pointAdder()
         self.pointsDisplay.text = "You have amassed \(counter) points!"
+        
+//        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+//
+//            let labelToSave = Points(entity: Points.entity(), insertInto: context)
+//
+//            if let userLabel = pointsDisplay.text {
+//
+//                if let userLabelData =
+//                    userLabel.String(){
+//                    labelToSave.labelData = userLabel
+//                }
+//            }
+//
+//            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        
+//        var newPoints = pointAdder()
+//        pointsDisplay.text = "You have amassed \(counter) points!"
             }
         
     
@@ -67,5 +86,6 @@ class PointsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 

@@ -13,6 +13,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "dc_street_exlopre.png")!)
         // Do any additional setup after loading the view.
     }
     
