@@ -14,30 +14,38 @@ class PointsViewController: UIViewController {
  
     
     @IBOutlet weak var pointsDisplay: UILabel!
-    func changeDisplay () {
-        self.pointsDisplay.text = "You have amassed \(counter) points!"
-    }
-        @IBAction func pointAdder(_ sender: UIButton) {
-            
-            let x = Int.random(in: 0 ... 2)
-            var customMessages = ["you are the change this world needs", "be the force that fights against oppression and ignorance","you are helping to benefit the lives of many"]
-            
-            
-            
-            counter+=1
-            
-            if counter % 10 == 0 {
-                let congratMessage = customMessages[x]
-                let alertController = UIAlertController(title : "" , message : congratMessage, preferredStyle: UIAlertController.Style.alert)
-                alertController.addAction(UIAlertAction(title: "", style :UIAlertAction.Style.default, handler: nil))
-                present(alertController, animated: true, completion : nil)
-            }
-        }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        changeDisplay()
+//        changeDisplay()
+    }
+    func pointAdder() {
+            
+        let x = Int.random(in: 0 ... 2)
+        var customMessages = ["You are the change this world needs!", "Be the force that fights against oppression and ignorance!","You are helping to benefit the lives of many!"]
+            
+            
+            
+        counter+=1
+            
+        if counter % 10 == 0 {
+            let congratMessage = customMessages[x]
+            let alertController = UIAlertController(title : "Surprise!" , message : congratMessage, preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "Thanks!", style :UIAlertAction.Style.default, handler: nil))
+                present(alertController, animated: true, completion : nil)
+            }
+            
         }
+    
+    @IBAction func changeDisplay(_ sender: UIButton) {
+    
+        pointAdder()
+        self.pointsDisplay.text = "You have amassed \(counter) points!"
+            }
+        
+    
+    
   
         // Do any additional setup after loading the view.
     

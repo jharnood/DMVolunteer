@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186ECAA922C509070025A9A9 /* ChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186ECAA822C509070025A9A9 /* ChildrenViewController.swift */; };
 		18E8445A22C3C349009AED74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8445922C3C349009AED74 /* AppDelegate.swift */; };
 		18E8445C22C3C349009AED74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8445B22C3C349009AED74 /* ViewController.swift */; };
 		18E8445F22C3C349009AED74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8445D22C3C349009AED74 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186ECAA822C509070025A9A9 /* ChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenViewController.swift; sourceTree = "<group>"; };
 		18E8445622C3C349009AED74 /* DMVolunteer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMVolunteer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E8445922C3C349009AED74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E8445B22C3C349009AED74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				18E8445922C3C349009AED74 /* AppDelegate.swift */,
 				18E8445D22C3C349009AED74 /* Main.storyboard */,
+				186ECAA822C509070025A9A9 /* ChildrenViewController.swift */,
 				18E8449222C40022009AED74 /* LabelController.swift */,
 				18E8445B22C3C349009AED74 /* ViewController.swift */,
 				18E8448E22C3CC7E009AED74 /* PointsViewController.swift */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E8449322C40022009AED74 /* LabelController.swift in Sources */,
+				186ECAA922C509070025A9A9 /* ChildrenViewController.swift in Sources */,
 				18E8448F22C3CC7E009AED74 /* PointsViewController.swift in Sources */,
 				18E8445C22C3C349009AED74 /* ViewController.swift in Sources */,
 				18E8445A22C3C349009AED74 /* AppDelegate.swift in Sources */,
